@@ -33,38 +33,49 @@
 // };
 // getAges([jim, dilys, marjorie]);
 
-const john = {
-  name: 'John',
-  age: 60
+// const john = {
+//   name: 'John',
+//   age: 60
+// };
+
+// const eric = {
+//   name: 'Eric',
+//   age: 50
+// };
+
+// const gary = {
+//   name: 'Gary',
+//   age: 25
+// };
+
+// const james = {
+//   name: 'James',
+//   age: 10
+// };
+
+// const averageAge = people => {
+//   const arr = people.map(person => {
+//     console.log(person.age);
+//     return person.age;
+//   });
+//   console.log(arr);
+//   let avg = 0;
+//   for (let i = 0; i < arr.length; i++) {
+//     avg += arr[i];
+//   }
+//   return avg / arr.length;
+// };
+
+// let x = averageAge([john, eric, gary]);
+// console.log(x);
+
+const createTalkingPerson = (name, age) => {
+  const obj = {
+    name,
+    age
+  };
+  return obj;
 };
 
-const eric = {
-  name: 'Eric',
-  age: 50
-};
-
-const gary = {
-  name: 'Gary',
-  age: 25
-};
-
-const james = {
-  name: 'James',
-  age: 10
-};
-
-const averageAge = people => {
-  const arr = people.map(person => {
-    console.log(person.age);
-    return person.age;
-  });
-  console.log(arr);
-  let avg = 0;
-  for (let i = 0; i < arr.length; i++) {
-    avg += arr[i];
-  }
-  return avg / arr.length;
-};
-
-let x = averageAge([john, eric, gary]);
-console.log(x);
+const bill = createTalkingPerson('Bill', 40);
+console.log(bill);
