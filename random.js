@@ -1,9 +1,70 @@
-const removeNthElement2 = (index, array) => {
-  const newArray = [...array];
-  newArray.splice(index, 1);
-  return newArray;
+// const removeNthElement2 = (index, array) => {
+//   const newArray = [...array];
+//   newArray.splice(index, 1);
+//   return newArray;
+// };
+
+// const array = ['bike', 'car', 'train', 'bus'];
+// let x = removeNthElement2(2, array);
+// console.log(x);
+
+// const getAges = people => {
+//   let ages = [];
+//   for (let i = 0; i < people.length; i++) {
+//     return ages.push(people[i].age);
+//   }
+
+//   return ages;
+// };
+
+// const jim = {
+//   name: 'Jim',
+//   age: 66
+// };
+
+// const dilys = {
+//   name: 'Dilys',
+//   age: 50
+// };
+
+// const marjorie = {
+//   name: 'Marjorie',
+//   age: 65
+// };
+// getAges([jim, dilys, marjorie]);
+
+const john = {
+  name: 'John',
+  age: 60
 };
 
-const array = ['bike', 'car', 'train', 'bus'];
-let x = removeNthElement2(2, array);
+const eric = {
+  name: 'Eric',
+  age: 50
+};
+
+const gary = {
+  name: 'Gary',
+  age: 25
+};
+
+const james = {
+  name: 'James',
+  age: 10
+};
+
+const averageAge = people => {
+  const arr = people.map(person => {
+    console.log(person.age);
+    return person.age;
+  });
+  console.log(arr);
+  let avg = 0;
+  for (let i = 0; i < arr.length; i++) {
+    avg += arr[i];
+  }
+  return avg / arr.length;
+};
+
+let x = averageAge([john, eric, gary]);
 console.log(x);
