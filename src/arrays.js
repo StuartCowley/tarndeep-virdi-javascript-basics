@@ -1,61 +1,100 @@
 const getNthElement = (index, array) => {
   // your code here
+  return array[index % 4];
 };
 
 const arrayToCSVString = array => {
   // your code here
+  return array.join(',');
 };
 
 const csvStringToArray = string => {
-  // your code here
+  return string.split(',');
 };
 
 const addToArray = (element, array) => {
   // your code here
+  array.push(element);
 };
 
 const addToArray2 = (element, array) => {
   // your code here
+  return [...array, element];
 };
 
 const removeNthElement = (index, array) => {
   // your code here
+  return array.splice(index, 1);
 };
 
 const numbersToStrings = numbers => {
   // your code here
+  return numbers.map(String);
 };
 
 const uppercaseWordsInArray = strings => {
-  // your code here
+  return strings.map(word => word.toUpperCase());
 };
 
 const reverseWordsInArray = strings => {
   // your code here
+  return strings.map(string => {
+    return string
+      .split('')
+      .reverse()
+      .join('');
+  });
 };
 
 const onlyEven = numbers => {
-  // your code here
+  const even = [];
+
+  numbers.map(number => {
+    if (number % 2 === 0) {
+      return even.push(number);
+    }
+  });
+
+  return even;
 };
 
 const removeNthElement2 = (index, array) => {
-  // your code here
+  const newArray = [...array];
+  newArray.splice(index, 1);
+  return newArray;
 };
 
 const elementsStartingWithAVowel = strings => {
-  // your code here
+  const stringNew = [];
+
+  strings.map(string => {
+    const testString = string.toLowerCase();
+    if (
+      testString[0] === 'a' ||
+      testString[0] === 'e' ||
+      testString[0] === 'i' ||
+      testString[0] === 'o' ||
+      testString[0] === 'u'
+    ) {
+      return stringNew.push(string);
+    }
+  });
+  return stringNew;
 };
 
 const removeSpaces = string => {
-  // your code here
+  return string.replace(/\s/gi, '');
 };
 
 const sumNumbers = numbers => {
-  // your code here
+  return numbers.reduce(function(sum, number) {
+    return sum + number;
+  }, 0);
 };
 
 const sortByLastLetter = strings => {
   // your code here
+  return strings.sort(strings[-1]);
 };
 
 module.exports = {
