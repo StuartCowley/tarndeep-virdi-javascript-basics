@@ -93,8 +93,17 @@ const sumNumbers = numbers => {
 };
 
 const sortByLastLetter = strings => {
-  // your code here
-  return strings.sort(strings[-1]);
+  return strings.sort((a, b) => {
+    return a.charCodeAt(a.length - 1) - b.charCodeAt(b.length - 1);
+  });
+  // const backArray = strings.map(string => {
+  //   return string
+  //     .split('')
+  //     .reverse()
+  //     .join('');
+  // });
+
+  // return backArray.sort();
 };
 
 module.exports = {

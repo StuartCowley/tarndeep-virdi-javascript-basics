@@ -29,11 +29,12 @@ const getAges = people => {
 };
 
 const findByName = (name, people) => {
-  return people.filter(e => {
-    if (e.name === name) {
-      return e;
-    }
-  });
+  // return people.filter(e => {
+  //   if (e.name === name) {
+  //     return e;
+  //   }
+  // });
+  return people.find(person => person.name === name);
 };
 
 const findHondas = cars => {

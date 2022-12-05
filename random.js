@@ -79,3 +79,14 @@ const createTalkingPerson = (name, age) => {
 
 const bill = createTalkingPerson('Bill', 40);
 console.log(bill);
+
+return strings.sort((a, b) => {
+  const x = a.charAt(a.length - 1);
+  const y = b.charAt(b.length - 1);
+  if (x < y) {
+    return -1;
+  }
+  if (x > y) {
+    return 1;
+  }
+});
