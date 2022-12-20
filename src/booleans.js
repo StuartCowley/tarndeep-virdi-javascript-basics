@@ -1,62 +1,107 @@
 function negate(a) {
-  // your code here
-};
+  return !a;
+}
 
 function both(a, b) {
   // your code here
-};
+  if (a === true && b === true) {
+    return true;
+  }
+  return false;
+}
 
 function either(a, b) {
-  // your code here
-};
+  if (a === true || b === true) {
+    return true;
+  }
+  return false;
+}
 
 function none(a, b) {
-  // your code here
-};
+  if (a === false && b === false) {
+    return true;
+  }
+  return false;
+}
 
 function one(a, b) {
-  // your code here
-};
+  if (a === false && b === false) {
+    return false;
+  }
+  if (a === false || b === false) {
+    return true;
+  }
+  return false;
+}
 
 function truthiness(a) {
-  // your code here
-};
+  if (!!a === true) {
+    return true;
+  }
+  return false;
+}
 
 function isEqual(a, b) {
-  // your code here
-};
+  if (a === b) {
+    return true;
+  }
+  return false;
+}
 
 function isGreaterThan(a, b) {
-  // your code here
-};
+  if (a > b) {
+    return true;
+  }
+  return false;
+}
 
 function isLessThanOrEqualTo(a, b) {
-  // your code here
-};
+  if (a <= b) {
+    return true;
+  }
+  return false;
+}
 
 function isOdd(a) {
-  // your code here
-};
+  if (a % 2 !== 0) {
+    return true;
+  }
+  return false;
+}
 
 function isEven(a) {
-  // your code here
-};
+  if (a % 2 === 0) {
+    return true;
+  }
+  return false;
+}
 
 function isSquare(a) {
-  // your code here
-};
+  const b = Math.sqrt(a);
+  if (b % 1 === 0) {
+    return true;
+  }
+  return false;
+}
 
 function startsWith(char, string) {
-  // your code here
-};
+  if (string[0] === char) {
+    return true;
+  }
+  return false;
+}
 
 function containsVowels(string) {
-  // your code here
-};
+  const regexCheck = /[aeiouAEIOU]+/g;
+  return regexCheck.test(string);
+}
 
 function isLowerCase(string) {
-  // your code here
-};
+  if (string === string.toLowerCase()) {
+    return true;
+  }
+  return false;
+}
 
 module.exports = {
   negate,

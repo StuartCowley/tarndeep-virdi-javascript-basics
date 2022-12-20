@@ -1,45 +1,56 @@
-function add (a, b) {
-  // your code here
+function add(a, b) {
+  return a + b;
 }
 
-function subtract (a, b) {
+function subtract(a, b) {
   // your code here
+  return a - b;
 }
 
-function multiply (a, b) {
+function multiply(a, b) {
   // your code here
+  return a * b;
 }
 
-function divide (a, b) {
+function divide(a, b) {
   // your code here
+  return a / b;
 }
 
-function power (a, b) {
+function power(a, b) {
   // your code here
+  return a ** b;
 }
 
-function round (a) {
+function round(a) {
   // your code here
+  return Math.round(a);
 }
 
-function roundUp (a) {
+function roundUp(a) {
   // your code here
+  return Math.ceil(a);
 }
 
-function roundDown (a) {
+function roundDown(a) {
   // your code here
+  return Math.floor(a);
 }
 
-function absolute (a) {
+function absolute(a) {
   // your code here
+  return Math.abs(a);
 }
 
-function quotient (a, b) {
+function quotient(a, b) {
   // your code here
+  let x = a / b;
+  return Math.trunc(x);
 }
 
-function remainder (a, b) {
+function remainder(a, b) {
   // your code here
+  return a % b;
 }
 
 module.exports = {
@@ -54,4 +65,4 @@ module.exports = {
   absolute,
   quotient,
   remainder
-}
+};
